@@ -12,7 +12,7 @@ using leaveManagementSystem.web.Data;
 namespace leaveManagementSystem.web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240911135559_AddingLeaveTypesTable")]
+    [Migration("20240911143503_AddingLeaveTypesTable")]
     partial class AddingLeaveTypesTable
     {
         /// <inheritdoc />
@@ -237,7 +237,7 @@ namespace leaveManagementSystem.web.Data.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(150)");
 
                     b.Property<int>("NumberOfDays")
                         .HasColumnType("int");

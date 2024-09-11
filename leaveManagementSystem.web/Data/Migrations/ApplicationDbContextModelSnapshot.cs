@@ -234,7 +234,7 @@ namespace leaveManagementSystem.web.Data.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(150)");
 
                     b.Property<int>("NumberOfDays")
                         .HasColumnType("int");
